@@ -18,7 +18,6 @@ def loading_db(input_bam):
                 read_id = read.qname
                 db[read_id] = "y"
         ff.close()
-
         return(db)
 
 if __name__=="__main__":
@@ -31,6 +30,5 @@ if __name__=="__main__":
                 read_id = read.qname
                 if read_id not in part.keys():
                         rest.write(read)
-
         rest.cloes()
         ff.close()
