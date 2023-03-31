@@ -30,5 +30,5 @@ if __name__=="__main__":
                 read_id = read.qname
                 if read_id not in part.keys():
                         rest.write(read)
-        rest.cloes()
+        rest.close()
         ff.close()
