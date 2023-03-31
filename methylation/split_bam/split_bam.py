@@ -22,9 +22,8 @@ def loading_db(input_bam):
         return(db)
 
 if __name__=="__main__":
-
         part = loading_db(args.ref)
-
+        
         ff = pysam.AlignmentFile(args.input,'rb')
         rest = pysam.AlignmentFile(args.output, "wb", template=ff)
         
