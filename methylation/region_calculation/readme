@@ -1,7 +1,0 @@
-A script help you to calculate the average methylation of a region.
-
-how to use:
-python meCpG_region.py -in test.bed -ref zf_promoter.db -p 3
-
-note:
-All the .db file were based on the zebrafish GRCz11 genome.
